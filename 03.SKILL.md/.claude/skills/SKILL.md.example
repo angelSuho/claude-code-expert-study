@@ -1,0 +1,21 @@
+---
+name: my-skill-name
+description: 이 Skill이 무엇을 하고 언제 사용하는지 명확하게.
+allowed-tools: Bash(npm run:*), Read, Write
+---
+
+# My Skill Name
+
+Skill의 목적과 핵심 원칙을 한두 문장으로.
+
+<!-- SKILL.md
+├── YAML 메타데이터 영역
+│   ├── name
+│   ├── description
+│   └── allowed-tools
+│
+└── Markdown 본문
+    ├── 제목
+    ├── 사용 시점
+    ├── Instructions
+    └── Examples -->

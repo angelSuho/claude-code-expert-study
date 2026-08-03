@@ -1,0 +1,46 @@
+{
+  "hooksInWindows": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/stop-notify.js"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/notification-notify.js"
+          }
+        ]
+      }
+    ]
+  },
+  "hooksInMacOS": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -message '작업이 완료되었습니다.' -title '클로드 코드' -sound Glass"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -message '입력을 기다리고 있습니다.' -title '클로드 코드' -sound Ping"
+          }
+        ]
+      }
+    ]
+  }
+}

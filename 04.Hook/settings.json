@@ -1,0 +1,15 @@
+{
+    "hooks": {
+        "이벤트명": [
+            {
+                "matcher": "도구패턴",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "실행할 명령어"
+                    }
+                ]
+            }
+        ]
+    }
+}
