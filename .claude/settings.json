@@ -1,0 +1,39 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/stop-notify.js"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/notification-notify.js"
+          }
+        ]
+      }
+    ]
+  },
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": ".claude/hooks/format-ts.sh"
+        },
+        {
+          "type": "command",
+          "command": ".claude/hooks/format-py.sh"
+        }
+      ]
+    }
+  ]
+}
